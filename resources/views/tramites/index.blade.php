@@ -13,7 +13,6 @@
                 <p>{{$colegiado->capitulos}}</p>
                 <h1>{{$capitulos->last()->colegiados}}</h1>
             @endforeach --}}
-<<<<<<< HEAD
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
         <a href="tramites.crear">
@@ -120,10 +119,8 @@
         </a>
         
       </div>
-=======
 
         </div>
->>>>>>> 25a4b92424a1a12dc1040e5b60d8711e3de242b8
     </div>
     
 @stop

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Tramite;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use App\Models\Colegiado;
 use App\Models\Pago;
 use App\Models\User;
@@ -12,8 +11,6 @@ use App\Models\Oficina;
 use App\Models\Tipo_tramite;
 use App\Models\Persona;
 use App\Models\Seguimiento;
-=======
->>>>>>> 25a4b92424a1a12dc1040e5b60d8711e3de242b8
 
 class TramiteController extends Controller
 {
@@ -24,7 +21,6 @@ class TramiteController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         $users = User::all();
         $colegiados = Colegiado::all();
         $pagos = Pago::all();
@@ -32,14 +28,12 @@ class TramiteController extends Controller
         $oficinas = Oficina::all();
         $tipo_tramite = Tipo_tramite::all();
         $persona = Persona::all();
-        return view('tramites.index', compact('pagos','colegiados','users','tramites','oficinas','tipo_tramite','persona'));
+        return view('tramites.index', compact('pagos','colegiados','users','tramites','oficinas','tipo_tramixte','persona'));
        // $colegiado->id = $request->get('id');
       //  $colegiado = "holao";
       //  return view('tramites.index');
 
-=======
         return view('tramites.prueba');
->>>>>>> 25a4b92424a1a12dc1040e5b60d8711e3de242b8
     }
 
     /**
@@ -52,7 +46,6 @@ class TramiteController extends Controller
         //
     }
 
-<<<<<<< HEAD
     public function ofic()
     {
         $users = User::all();
@@ -90,17 +83,12 @@ class TramiteController extends Controller
 
       return redirect()->route("tramites.index")->with("success", "Agregado con exito!");
       print_r($_POST);
-=======
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
->>>>>>> 25a4b92424a1a12dc1040e5b60d8711e3de242b8
     }
     public function crecole(Request $request)
     {
@@ -121,6 +109,7 @@ class TramiteController extends Controller
       return redirect()->route("tramites.index")->with("success", "Agregado con exito!");
       print_r($_POST);
     }
+
     public function creperso(Request $request)
     {
       
@@ -146,7 +135,6 @@ class TramiteController extends Controller
      */
     public function show(Tramite $tramite)
     {
-<<<<<<< HEAD
         $users = User::all();
         $colegiados = Colegiado::all();
         $pagos = Pago::all();
@@ -159,9 +147,7 @@ class TramiteController extends Controller
       //  $tramites->fecha_emi = $request->get('fecha_emi');
      //   $tramites->fecha_recep = $request->get('fecha_recep');
      //   $tramites->archivo =$request->get('tipo_tramite_id');
-=======
         //
->>>>>>> 25a4b92424a1a12dc1040e5b60d8711e3de242b8
     }
 
     /**

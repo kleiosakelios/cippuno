@@ -33,7 +33,7 @@
 </div>
 
   <label for="">Id colegiado</label>
-  <input id="tipo_tramite_id" type="number"name="colegiado_id" ><br>
+  <td><input type="text"  name="nombre_apellido" id="colegiado_id" value="{{ auth()->id(); }}"disabled></td><br>
   <label for="">Asunto</label>
   <textarea class="form-control" rows="3" name="asunto" placeholder="asunto" ></textarea>
   <label for="">Fecha Emision</label>
